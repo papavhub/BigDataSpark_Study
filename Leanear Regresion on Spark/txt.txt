@@ -1,0 +1,14 @@
+다음 요구사항을 databricks 기반 Spark를 이용하여 수행하라.
+o 제출사항: 실행결과가 포함되어 있는 주피터노트북 
+o 배점: 7점 
+o 요구사항
+아래 링크는 scikit-learn의 load_diabetes() 데이터를 이용하여 linear_regression 모델을 구하는 내용이다. 
+https://scikit-learn.org/stable/auto_examples/linear_model/plot_ols.html#sphx-glr-auto-examples-linear-model-plot-ols-py
+  (1) (5점) (단순회귀분석) 동일 내용을 spark를 이용하여  구하되, 다음 사항을 반영하시오. 
+  - train data, test data 분할: random_state를 학번마지막 뒷 2자리로 설정한 train_test_split 함수로 train:test=7:3으로 분할
+  - np.newaxis 이외의 입력변수 1개를 선택하여 사용하되, 모든 행을 이용하라.
+  - mean_squared_error를 최소화하기 위해 입력변수를 바꿔도 좋습니다. 
+  - 위의 링크와 같이 Coefficients, Mean squared error와 R2 를  출력하시오.
+  - plotting을 하시오. (입력변수 1개, target의 scatter chart, 추정한 선형모델을 그림)
+  (2) (2점) (다중회귀분석) 위의 내용을 동일하게 수행하되, 입렵변수 개수 제한을 풀어 최적화된 linear regression model을 구해 수행하라.
+  - plotting을 제외한 (1)번과 동일 출력을 하시오. 
